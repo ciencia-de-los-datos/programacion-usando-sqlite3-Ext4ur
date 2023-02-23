@@ -39,4 +39,4 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
 
-SELECT STRFTIME('%Y', c14) AS anio, COUNT(*) FROM tbl1 GROUP BY anio HAVING anio='2018';
+SELECT COUNT(*) FROM tbl1 WHERE STRFTIME('%Y', c14)='2018';
